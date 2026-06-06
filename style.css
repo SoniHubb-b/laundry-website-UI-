@@ -1,0 +1,326 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f9f9f9;
+}
+
+/* HEADER */
+
+.Header{
+background:linear-gradient(to right,#a7ffeb,#e0f7fa);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.Intro{
+display:flex;
+flex-direction:column;
+}
+
+h1{
+font-weight:400;
+font-family:'Times New Roman',Times,serif;
+}
+
+#am{
+font-size:0.9rem;
+color:#444;
+}
+
+/* NAVBAR */
+
+ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+a{
+text-decoration:none;
+color:black;
+font-weight:600;
+}
+
+a:hover{
+color:chocolate;
+}
+
+/* HERO SECTION */
+
+#Home{
+margin-top:140px;
+text-align:center;
+font-size:2.5rem;
+font-weight:bold;
+color:#f9f9f9;
+}
+
+.desc{
+text-align:center;
+font-size:3rem;
+margin-top:30px;
+color:#333;
+font-weight:bold;
+}
+
+.tagline{
+text-align:center;
+font-size:1.5rem;
+color:chocolate;
+margin-top:10px;
+font-weight:bold;
+}
+
+#bt1{
+display:block;
+margin:25px auto;
+width:180px;
+height:50px;
+border:none;
+border-radius:10px;
+background:bisque;
+color:chocolate;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+#bt1:hover{
+box-shadow:0 0 15px chocolate;
+}
+
+/* SERVICES */
+
+.services{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:40px 20px;
+}
+
+.service{
+background:bisque;
+width:280px;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.service-title{
+font-size:1.2rem;
+font-weight:bold;
+color:chocolate;
+margin-bottom:10px;
+}
+
+.service-desc{
+color:#444;
+}
+
+/* BOOKING FORM */
+
+.Bookingwash{
+width:90%;
+max-width:700px;
+margin:30px auto;
+background:bisque;
+padding:25px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+#Name,
+#PhoneNumber,
+#Address{
+width:100%;
+padding:10px;
+margin-top:15px;
+border-radius:5px;
+border:1px solid #ddd;
+}
+
+label{
+display:block;
+margin-top:20px;
+}
+
+#Choose{
+margin-top:10px;
+padding:8px;
+border-radius:5px;
+}
+
+#bt2{
+display:block;
+margin-left:auto;
+margin-top:25px;
+width:150px;
+height:45px;
+border:none;
+border-radius:10px;
+background:white;
+color:chocolate;
+font-weight:bold;
+cursor:pointer;
+}
+
+#bt2:hover{
+box-shadow:0 0 15px chocolate;
+}
+
+/* SUCCESS CARD */
+
+.AfterBook{
+width:90%;
+max-width:500px;
+margin:30px auto;
+padding:25px;
+background:bisque;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.AfterBook img{
+width:150px;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.AfterBook p{
+margin-top:15px;
+font-size:1.2rem;
+font-weight:bold;
+}
+
+#bt3{
+margin-top:20px;
+width:120px;
+height:40px;
+border:none;
+border-radius:10px;
+background:white;
+color:chocolate;
+font-weight:bold;
+cursor:pointer;
+}
+
+#bt3:hover{
+box-shadow:0 0 15px chocolate;
+}
+
+/* PRICING */
+
+.pricing{
+display:flex;
+justify-content:center;
+padding:40px 20px;
+}
+
+table{
+width:100%;
+max-width:500px;
+border-collapse:collapse;
+background:bisque;
+border-radius:10px;
+overflow:hidden;
+}
+
+th,
+td{
+padding:15px;
+text-align:center;
+}
+
+th{
+color:chocolate;
+}
+
+/* CONTACT */
+
+.contact{
+width:90%;
+max-width:400px;
+margin:40px auto;
+padding:20px;
+background:bisque;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.contact span{
+display:block;
+margin-bottom:15px;
+font-size:1.2rem;
+font-weight:bold;
+color:chocolate;
+}
+
+/* FOOTER */
+
+footer{
+background:#444;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* UTILITIES */
+
+.hide{
+display:none;
+}
+
+.hide2{
+display:none;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .Header{
+        flex-direction:column;
+        gap:10px;
+        padding:15px;
+    }
+
+    ul{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .desc{
+        font-size:2rem;
+        padding:0 15px;
+    }
+
+    .tagline{
+        font-size:1.2rem;
+    }
+
+    #Home{
+        font-size:2rem;
+    }
+
+    .service{
+        width:100%;
+        max-width:320px;
+    }
+}
